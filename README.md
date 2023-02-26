@@ -15,10 +15,14 @@ This is a fictional inverter. This is used on modernized Akira Kurosawa Rapid Tr
 This is a fictional inverter. No vehicles use this yet.  
 [Simulation](https://www.youtube.com/watch?v=4G-hD7c9Ha4)
   
-### LACMTA A650 GE GTO-VVVF
+### GE GTO-VVVF
 LA Metro Breda A650's with AC VF propulsion.  
 [Induction mic recording](https://www.youtube.com/watch?v=RxTIYGlXDM4)
   
+### ADtranz MITRAC 1507C IGBT-VVVF
+Used on some BART Rohr cars. The transition from Async to CHM 7P is not actually Async.  
+[BART Rohr induction mic recording by North Texas Rail and Elevator](https://www.youtube.com/watch?v=L5aI8RqsBpw)
+
 ### ADtranz MITRAC 1508C IGBT-VVVF
 NYC MTA R142A/R143/R188 and MBTA Type 8. The file does not have the transition from Async to Sync PWM.  
 [R143 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=dTILIhPkUvo)  
