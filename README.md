@@ -27,5 +27,9 @@ Used on some BART Rohr cars. The transition from Async to CHM 7P is not actually
 NYC MTA R142A/R143/R188 and MBTA Type 8. The file does not have the transition from Async to Sync PWM.  
 [R143 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=dTILIhPkUvo)  
 [Type 8 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=I8WXGLEt6BY)  
-  
+
+### AEG GEATRAC DASU 6.1 GTO-VVVF
+Hong Kong MTR ADtranz/CAF EMU on the Tung Chung and Airport Express lines. The file does not have the transition from Async to Sync PWM. Pulse modes may not be correct. I need an induction microphone recording to reference from.  
+[Simulation](https://www.youtube.com/watch?v=t1FFjugW2b8)  
+
 More coming soon!
