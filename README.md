@@ -8,7 +8,7 @@ Download the files or copy their contents to a new .yaml file. Then open it in t
   
 ## Notes
 ### Hanabishi GTO-VVVF
-This is a fictional inverter. This is used on modernized Akira Kurosawa Rapid Transit System (fictional) Boeing trains.  
+This is a fictional inverter. This is used on modernized Akira Kurosawa Rapid Transit Railway (fictional) Boeing trains.  
 [Simulation](https://www.youtube.com/watch?v=PkHMsh8ok-w)
   
 ### Hanabishi IGBT-VVVF
@@ -16,8 +16,9 @@ This is a fictional inverter. No vehicles use this yet.
 [Simulation](https://www.youtube.com/watch?v=4G-hD7c9Ha4)
   
 ### GE GTO-VVVF
-LA Metro Breda A650's with AC VF propulsion.  
-[Induction mic recording](https://www.youtube.com/watch?v=RxTIYGlXDM4)
+LA Metro Breda A650's with AC VF propulsion. Also on MBTA 1800 Series.  
+[Induction mic recording](https://www.youtube.com/watch?v=RxTIYGlXDM4)  
+[MBTA 1800 Series induction mic recording by Ebara Express](https://www.youtube.com/watch?v=jQIdCOf7oX4)
   
 ### ADtranz MITRAC 1507C IGBT-VVVF
 Used on some BART Rohr cars. The transition from Async to CHM 7P is not actually Async.  
@@ -26,10 +27,11 @@ Used on some BART Rohr cars. The transition from Async to CHM 7P is not actually
 ### ADtranz MITRAC 1508C IGBT-VVVF
 NYC MTA R142A/R143/R188 and MBTA Type 8. The file does not have the transition from Async to Sync PWM.  
 [R143 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=dTILIhPkUvo)  
-[Type 8 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=I8WXGLEt6BY)  
+[MBTA Type 8 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=I8WXGLEt6BY)  
 
 ### AEG GEATRAC DASU 6.1 GTO-VVVF
 Hong Kong MTR ADtranz/CAF EMU on the Tung Chung and Airport Express lines. The file does not have the transition from Async to Sync PWM. Pulse modes may not be correct. I need an induction microphone recording to reference from.  
 [Simulation](https://www.youtube.com/watch?v=t1FFjugW2b8)  
+[Motor sound recording by West World Life](https://www.youtube.com/watch?v=XGHq1-9Ds5o)
 
 More coming soon!
