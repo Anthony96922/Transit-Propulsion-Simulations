@@ -1,0 +1,2841 @@
+level: 2
+mascon_data:
+  braking:
+    on:
+      freq_per_sec: 120
+      control_freq_go_to: 360
+    off:
+      freq_per_sec: 120
+      control_freq_go_to: 360
+  accelerating:
+    on:
+      freq_per_sec: 120
+      control_freq_go_to: 360
+    off:
+      freq_per_sec: 120
+      control_freq_go_to: 360
+min_freq:
+  accelerate: 0
+  braking: 0
+accelerate_pattern:
+- from: 60
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_1
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 60
+        start_amp: 1
+        end_freq: 60.100000000000001
+        end_amp: 1
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 60
+          start_amp: 1
+          end_freq: 60.100000000000001
+          end_amp: 1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 60
+          start_amp: 1
+          end_freq: 60.100000000000001
+          end_amp: 1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 55
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_Wide_3
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: true
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: false
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 55
+        start_amp: 0.84799999999999998
+        end_freq: 59.999000000000002
+        end_amp: 0.94999999999999996
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 59.999000000000002
+          end_amp: 0.94999999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 59.999000000000002
+          end_amp: 0.94999999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 50
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_3
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 50
+        start_amp: 0.84199999999999997
+        end_freq: 54.999000000000002
+        end_amp: 0.92000000000000004
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 54.999000000000002
+          end_amp: 0.92000000000000004
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 54.999000000000002
+          end_amp: 0.92000000000000004
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 45
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_5
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 45
+        start_amp: 0.95199999999999996
+        end_freq: 49.999000000000002
+        end_amp: 1.083
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 49.999000000000002
+          end_amp: 1.083
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 49.999000000000002
+          end_amp: 1.083
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 37.5
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_7
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 37.5
+        start_amp: 0.79300000000000004
+        end_freq: 44.999000000000002
+        end_amp: 0.97299999999999998
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 44.999000000000002
+          end_amp: 0.97299999999999998
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 44.999000000000002
+          end_amp: 0.97299999999999998
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 32.5
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_9
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 32.5
+        start_amp: 0.70099999999999996
+        end_freq: 37.499000000000002
+        end_amp: 0.81000000000000005
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 37.499000000000002
+          end_amp: 0.81000000000000005
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 37.499000000000002
+          end_amp: 0.81000000000000005
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 30
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_11
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 30
+        start_amp: 0.64900000000000002
+        end_freq: 32.499000000000002
+        end_amp: 0.70299999999999996
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 32.499000000000002
+          end_amp: 0.70299999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 32.499000000000002
+          end_amp: 0.70299999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 10
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: true
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 10
+        start_amp: 0.21299999999999999
+        end_freq: 29.998999999999999
+        end_amp: 0.64500000000000002
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.21299999999999999
+          end_freq: 29.998999999999999
+          end_amp: 0.64500000000000002
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.21299999999999999
+          end_freq: 29.998999999999999
+          end_amp: 0.64500000000000002
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: 460
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 3
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: true
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 3
+        start_amp: 0.063
+        end_freq: 9.9990000000000006
+        end_amp: 0.21299999999999999
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 3
+          start_amp: 0.063
+          end_freq: 9.9990000000000006
+          end_amp: 0.084000000000000005
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 3
+          start_amp: 0.063
+          end_freq: 9.9990000000000006
+          end_amp: 0.084000000000000005
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Moving
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 3
+        start_value: 230
+        end: 10
+        end_value: 460
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 0
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: true
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 0
+        start_amp: 0
+        end_freq: 2.9990000000000001
+        end_amp: 0.062
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 0
+          start_amp: 0
+          end_freq: 2.9990000000000001
+          end_amp: 0.050000000000000003
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 0
+          start_amp: 0
+          end_freq: 2.9990000000000001
+          end_amp: 0.050000000000000003
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: 230
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+braking_pattern:
+- from: 60
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_1
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 60
+        start_amp: 1
+        end_freq: 60.100000000000001
+        end_amp: 1
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 60
+          start_amp: 1
+          end_freq: 60.100000000000001
+          end_amp: 1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 60
+          start_amp: 1
+          end_freq: 60.100000000000001
+          end_amp: 1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 55
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_Wide_3
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: true
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: false
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 55
+        start_amp: 0.84799999999999998
+        end_freq: 59.999000000000002
+        end_amp: 0.94999999999999996
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 59.999000000000002
+          end_amp: 0.94999999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 59.999000000000002
+          end_amp: 0.94999999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 50
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_3
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 50
+        start_amp: 0.84199999999999997
+        end_freq: 54.999000000000002
+        end_amp: 0.92000000000000004
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 54.999000000000002
+          end_amp: 0.92000000000000004
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 54.999000000000002
+          end_amp: 0.92000000000000004
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 45
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_5
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 45
+        start_amp: 0.95199999999999996
+        end_freq: 49.999000000000002
+        end_amp: 1.083
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 49.999000000000002
+          end_amp: 1.083
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 49.999000000000002
+          end_amp: 1.083
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 37.5
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_7
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 37.5
+        start_amp: 0.79300000000000004
+        end_freq: 44.999000000000002
+        end_amp: 0.97299999999999998
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 44.999000000000002
+          end_amp: 0.97299999999999998
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 44.999000000000002
+          end_amp: 0.97299999999999998
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 32.5
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_9
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 32.5
+        start_amp: 0.70099999999999996
+        end_freq: 37.499000000000002
+        end_amp: 0.81000000000000005
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 37.499000000000002
+          end_amp: 0.81000000000000005
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 34.999000000000002
+          end_amp: 0.81000000000000005
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 30
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: CHMP_11
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 30
+        start_amp: 0.64900000000000002
+        end_freq: 32.499000000000002
+        end_amp: 0.70299999999999996
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 32.499000000000002
+          end_amp: 0.70299999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.25
+          end_freq: 32.499000000000002
+          end_amp: 0.70299999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 10
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: true
+    off:
+      skip: true
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 10
+        start_amp: 0.21299999999999999
+        end_freq: 29.998999999999999
+        end_amp: 0.64500000000000002
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.21299999999999999
+          end_freq: 29.998999999999999
+          end_amp: 0.64500000000000002
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 10
+          start_amp: 0.21299999999999999
+          end_freq: 29.998999999999999
+          end_amp: 0.64500000000000002
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: 460
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 3
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: true
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 3
+        start_amp: 0.063
+        end_freq: 9.9990000000000006
+        end_amp: 0.21299999999999999
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 3
+          start_amp: 0.063
+          end_freq: 9.9990000000000006
+          end_amp: 0.088999999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 3
+          start_amp: 0.063
+          end_freq: 9.9990000000000006
+          end_amp: 0.088999999999999996
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Moving
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 3
+        start_value: 230
+        end: 10
+        end_value: 460
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 0
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: true
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 0
+        start_amp: 0
+        end_freq: 2.9990000000000001
+        end_amp: 0.062
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 0
+          start_amp: 0
+          end_freq: 2.9990000000000001
+          end_amp: 0.050000000000000003
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 0
+          start_amp: 0
+          end_freq: 2.9990000000000001
+          end_amp: 0.050000000000000003
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: 230
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
