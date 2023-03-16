@@ -15,6 +15,10 @@ This is a fictional inverter. This is used on modernized Akira Kurosawa Rapid Tr
 This is a fictional inverter. No vehicles use this yet.  
 [Simulation](https://www.youtube.com/watch?v=4G-hD7c9Ha4)
   
+### Alstom ONIX IGBT-VVVF
+NYC MTA R142 & R160 and LA Metro P2000. R160 was used as a reference. P2000 may have different frequencies.  
+[R160 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=KhnxXwO_zAM)  
+
 ### GE GTO-VVVF
 LA Metro Breda A650's with AC VF propulsion. Also on MBTA 1800 Series.  
 [Induction mic recording](https://www.youtube.com/watch?v=RxTIYGlXDM4)  
