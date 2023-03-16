@@ -5,14 +5,14 @@ mascon_data:
       freq_per_sec: 160
       control_freq_go_to: 160
     off:
-      freq_per_sec: 160
+      freq_per_sec: 0
       control_freq_go_to: 160
   accelerating:
     on:
       freq_per_sec: 160
       control_freq_go_to: 160
     off:
-      freq_per_sec: 160
+      freq_per_sec: 0
       control_freq_go_to: 160
 min_freq:
   accelerate: 1
@@ -22,7 +22,7 @@ accelerate_pattern:
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
-  enable_off_free_run: true
+  enable_off_free_run: false
   enable_normal: true
   pulse_Mode:
     Shift: false
@@ -42,9 +42,9 @@ accelerate_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 95
+        start_freq: 100
         start_amp: 1
-        end_freq: 95.099999999999994
+        end_freq: 100.09999999999999
         end_amp: 1
         curve_change_rate: 0
         cut_off_amp: -1
@@ -55,9 +55,9 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 95
+          start_freq: 100
           start_amp: 1
-          end_freq: 95.099999999999994
+          end_freq: 100.09999999999999
           end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
@@ -67,9 +67,9 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 95
+          start_freq: 100
           start_amp: 1
-          end_freq: 95.099999999999994
+          end_freq: 100.09999999999999
           end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
@@ -159,7 +159,7 @@ accelerate_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-- from: 90
+- from: 85
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -175,18 +175,18 @@ accelerate_pattern:
   when_freerun:
     on:
       skip: true
-      stuck_at_here: false
+      stuck_at_here: true
     off:
       skip: false
-      stuck_at_here: false
+      stuck_at_here: true
   amplitude_control:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 90
-        start_amp: 0.91000000000000003
+        start_freq: 85
+        start_amp: 0.90000000000000002
         end_freq: 94.989999999999995
-        end_amp: 0.97999999999999998
+        end_amp: 0.90000000000000002
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -196,10 +196,10 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 90
-          start_amp: 0.91000000000000003
+          start_freq: 85
+          start_amp: 0.90000000000000002
           end_freq: 94.989999999999995
-          end_amp: 0.97999999999999998
+          end_amp: 0.90000000000000002
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -208,10 +208,10 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 90
-          start_amp: 0.91000000000000003
+          start_freq: 85
+          start_amp: 0.90000000000000002
           end_freq: 94.989999999999995
-          end_amp: 0.97999999999999998
+          end_amp: 0.90000000000000002
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -324,9 +324,9 @@ accelerate_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 75
-        start_amp: 0.81100000000000005
-        end_freq: 84.998999999999995
+        start_freq: 0
+        start_amp: 0
+        end_freq: 89.998999999999995
         end_amp: 0.90000000000000002
         curve_change_rate: 0
         cut_off_amp: -1
@@ -337,9 +337,9 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 10
-          start_amp: 0.10000000000000001
-          end_freq: 84.998999999999995
+          start_freq: 0
+          start_amp: 0
+          end_freq: 89.998999999999995
           end_amp: 0.90000000000000002
           curve_change_rate: 0
           cut_off_amp: -1
@@ -349,9 +349,9 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 75
-          start_amp: 0.81100000000000005
-          end_freq: 84.998999999999995
+          start_freq: 0
+          start_amp: 0
+          end_freq: 89.998999999999995
           end_amp: 0.90000000000000002
           curve_change_rate: 0
           cut_off_amp: -1
@@ -441,7 +441,7 @@ accelerate_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-- from: 40
+- from: 42.5
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -465,10 +465,10 @@ accelerate_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 40
-        start_amp: 0.76200000000000001
-        end_freq: 69.998999999999995
-        end_amp: 0.81000000000000005
+        start_freq: 0
+        start_amp: 0
+        end_freq: 74.998999999999995
+        end_amp: 0.75
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -478,10 +478,10 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 10
-          start_amp: 0.10000000000000001
-          end_freq: 69.998999999999995
-          end_amp: 0.81000000000000005
+          start_freq: 0
+          start_amp: 0
+          end_freq: 74.998999999999995
+          end_amp: 0.75
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -490,10 +490,10 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 40
-          start_amp: 0.76200000000000001
-          end_freq: 69.998999999999995
-          end_amp: 0.81000000000000005
+          start_freq: 0
+          start_amp: 0
+          end_freq: 74.998999999999995
+          end_amp: 0.75
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -582,7 +582,7 @@ accelerate_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-- from: 30
+- from: 35
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -606,10 +606,10 @@ accelerate_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 30
-        start_amp: 0.51700000000000002
-        end_freq: 44.999000000000002
-        end_amp: 0.76100000000000001
+        start_freq: 0
+        start_amp: 0
+        end_freq: 39.999000000000002
+        end_amp: 0.59999999999999998
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -619,10 +619,10 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 10
-          start_amp: 0.10000000000000001
-          end_freq: 44.999000000000002
-          end_amp: 0.76100000000000001
+          start_freq: 0
+          start_amp: 0
+          end_freq: 39.999000000000002
+          end_amp: 0.59999999999999998
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -631,10 +631,10 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 30
-          start_amp: 0.51700000000000002
-          end_freq: 44.999000000000002
-          end_amp: 0.76100000000000001
+          start_freq: 0
+          start_amp: 0
+          end_freq: 39.999000000000002
+          end_amp: 0.59999999999999998
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -739,7 +739,7 @@ accelerate_pattern:
   when_freerun:
     on:
       skip: false
-      stuck_at_here: false
+      stuck_at_here: true
     off:
       skip: false
       stuck_at_here: true
@@ -747,8 +747,8 @@ accelerate_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 5
-        start_amp: 0.084000000000000005
+        start_freq: 0
+        start_amp: 0
         end_freq: 29.998999999999999
         end_amp: 0.39900000000000002
         curve_change_rate: 0
@@ -760,8 +760,8 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 5
-          start_amp: 0.084000000000000005
+          start_freq: 0
+          start_amp: 0
           end_freq: 29.998999999999999
           end_amp: 0.39900000000000002
           curve_change_rate: 0
@@ -772,8 +772,8 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 5
-          start_amp: 0.084000000000000005
+          start_freq: 0
+          start_amp: 0
           end_freq: 29.998999999999999
           end_amp: 0.39900000000000002
           curve_change_rate: 0
@@ -879,8 +879,8 @@ accelerate_pattern:
     Alt_Mode: Default
   when_freerun:
     on:
-      skip: false
-      stuck_at_here: false
+      skip: true
+      stuck_at_here: true
     off:
       skip: false
       stuck_at_here: true
@@ -1005,17 +1005,16 @@ accelerate_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-braking_pattern:
-- from: 95
+- from: 94.75
   rotate_sine_from: -1
   rotate_sine_below: -1
-  enable_on_free_run: true
-  enable_off_free_run: true
+  enable_on_free_run: false
+  enable_off_free_run: false
   enable_normal: true
   pulse_Mode:
     Shift: false
     Square: false
-    pulse_name: P_1
+    pulse_name: P_Wide_3
     Base_Wave: Sine
     pulse_harmonics: []
     Alt_Mode: Default
@@ -1025,15 +1024,15 @@ braking_pattern:
       stuck_at_here: false
     off:
       skip: false
-      stuck_at_here: true
+      stuck_at_here: false
   amplitude_control:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 95
-        start_amp: 1
-        end_freq: 95.099999999999994
-        end_amp: 1
+        start_freq: 94.75
+        start_amp: 0.90000000000000002
+        end_freq: 94.989999999999995
+        end_amp: 0.98999999999999999
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -1043,10 +1042,10 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 95
-          start_amp: 1
-          end_freq: 95.099999999999994
-          end_amp: 1
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1055,10 +1054,10 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 95
-          start_amp: 1
-          end_freq: 95.099999999999994
-          end_amp: 1
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1147,22 +1146,22 @@ braking_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-- from: 90
+- from: 27
   rotate_sine_from: -1
   rotate_sine_below: -1
-  enable_on_free_run: true
-  enable_off_free_run: true
-  enable_normal: true
+  enable_on_free_run: false
+  enable_off_free_run: false
+  enable_normal: false
   pulse_Mode:
     Shift: false
     Square: false
-    pulse_name: P_Wide_3
+    pulse_name: Async
     Base_Wave: Sine
     pulse_harmonics: []
     Alt_Mode: Default
   when_freerun:
     on:
-      skip: true
+      skip: false
       stuck_at_here: false
     off:
       skip: false
@@ -1171,10 +1170,10 @@ braking_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 90
-        start_amp: 0.91000000000000003
-        end_freq: 94.989999999999995
-        end_amp: 0.97999999999999998
+        start_freq: 27
+        start_amp: 0.39900000000000002
+        end_freq: 27.489999999999998
+        end_amp: 0.39900000000000002
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -1184,10 +1183,10 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 90
-          start_amp: 0.91000000000000003
-          end_freq: 94.989999999999995
-          end_amp: 0.97999999999999998
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1196,10 +1195,293 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 90
-          start_amp: 0.91000000000000003
-          end_freq: 94.989999999999995
-          end_amp: 0.97999999999999998
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Moving
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 29
+        start_value: 500
+        end: 29.5
+        end_value: 300
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 27.5
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: false
+  enable_off_free_run: false
+  enable_normal: false
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: Async
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: false
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 27.5
+        start_amp: 0.39900000000000002
+        end_freq: 27.989999999999998
+        end_amp: 0.39900000000000002
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Moving
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 29.5
+        start_value: 300
+        end: 30
+        end_value: 310
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+braking_pattern:
+- from: 95
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: false
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_1
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 95
+        start_amp: 1
+        end_freq: 95.099999999999994
+        end_amp: 1
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 95
+          start_amp: 1
+          end_freq: 95.099999999999994
+          end_amp: 1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 100
+          start_amp: 1
+          end_freq: 100.09999999999999
+          end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1297,6 +1579,147 @@ braking_pattern:
   pulse_Mode:
     Shift: false
     Square: false
+    pulse_name: P_Wide_3
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: true
+      stuck_at_here: true
+    off:
+      skip: false
+      stuck_at_here: true
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 85
+        start_amp: 0.90000000000000002
+        end_freq: 94.989999999999995
+        end_amp: 0.90000000000000002
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: 85
+          start_amp: 0.90000000000000002
+          end_freq: 94.989999999999995
+          end_amp: 0.90000000000000002
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: 85
+          start_amp: 0.90000000000000002
+          end_freq: 94.989999999999995
+          end_amp: 0.90000000000000002
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 75
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: true
+  enable_off_free_run: true
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
     pulse_name: P_3
     Base_Wave: Sine
     pulse_harmonics: []
@@ -1312,8 +1735,8 @@ braking_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 85
-        start_amp: 0.81100000000000005
+        start_freq: 0
+        start_amp: 0
         end_freq: 89.998999999999995
         end_amp: 0.90000000000000002
         curve_change_rate: 0
@@ -1325,8 +1748,8 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 10
-          start_amp: 0.10000000000000001
+          start_freq: 0
+          start_amp: 0
           end_freq: 89.998999999999995
           end_amp: 0.90000000000000002
           curve_change_rate: 0
@@ -1337,8 +1760,8 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 85
-          start_amp: 0.81100000000000005
+          start_freq: 0
+          start_amp: 0
           end_freq: 89.998999999999995
           end_amp: 0.90000000000000002
           curve_change_rate: 0
@@ -1429,7 +1852,7 @@ braking_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-- from: 40
+- from: 37.5
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -1453,10 +1876,10 @@ braking_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 40
-        start_amp: 0.76200000000000001
-        end_freq: 69.998999999999995
-        end_amp: 0.81000000000000005
+        start_freq: 0
+        start_amp: 0
+        end_freq: 74.998999999999995
+        end_amp: 0.75
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -1466,10 +1889,10 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 10
-          start_amp: 0.10000000000000001
-          end_freq: 69.998999999999995
-          end_amp: 0.81000000000000005
+          start_freq: 0
+          start_amp: 0
+          end_freq: 74.998999999999995
+          end_amp: 0.75
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1478,10 +1901,10 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 40
-          start_amp: 0.76200000000000001
-          end_freq: 69.998999999999995
-          end_amp: 0.81000000000000005
+          start_freq: 0
+          start_amp: 0
+          end_freq: 74.998999999999995
+          end_amp: 0.75
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1594,10 +2017,10 @@ braking_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 30
-        start_amp: 0.51700000000000002
-        end_freq: 44.999000000000002
-        end_amp: 0.76100000000000001
+        start_freq: 0
+        start_amp: 0
+        end_freq: 39.999000000000002
+        end_amp: 0.59999999999999998
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -1607,10 +2030,10 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 10
-          start_amp: 0.10000000000000001
-          end_freq: 44.999000000000002
-          end_amp: 0.76100000000000001
+          start_freq: 0
+          start_amp: 0
+          end_freq: 39.999000000000002
+          end_amp: 0.59999999999999998
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1619,10 +2042,10 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 30
-          start_amp: 0.51700000000000002
-          end_freq: 44.999000000000002
-          end_amp: 0.76100000000000001
+          start_freq: 0
+          start_amp: 0
+          end_freq: 39.999000000000002
+          end_amp: 0.59999999999999998
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1727,7 +2150,7 @@ braking_pattern:
   when_freerun:
     on:
       skip: false
-      stuck_at_here: false
+      stuck_at_here: true
     off:
       skip: false
       stuck_at_here: true
@@ -1735,10 +2158,10 @@ braking_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 5
-        start_amp: 0.084000000000000005
+        start_freq: 0
+        start_amp: 0
         end_freq: 29.998999999999999
-        end_amp: 0.51600000000000001
+        end_amp: 0.39900000000000002
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -1748,10 +2171,10 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 5
-          start_amp: 0.084000000000000005
+          start_freq: 0
+          start_amp: 0
           end_freq: 29.998999999999999
-          end_amp: 0.53400000000000003
+          end_amp: 0.39900000000000002
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1760,10 +2183,10 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 5
-          start_amp: 0.084000000000000005
+          start_freq: 0
+          start_amp: 0
           end_freq: 29.998999999999999
-          end_amp: 0.53400000000000003
+          end_amp: 0.39900000000000002
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1852,7 +2275,7 @@ braking_pattern:
         end_value: 100
         degree: 2
         curve_rate: 0
-- from: 2.5
+- from: 0
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -1867,8 +2290,8 @@ braking_pattern:
     Alt_Mode: Default
   when_freerun:
     on:
-      skip: false
-      stuck_at_here: false
+      skip: true
+      stuck_at_here: true
     off:
       skip: false
       stuck_at_here: true
@@ -1943,6 +2366,147 @@ braking_pattern:
         start_value: 250
         end: 5
         end_value: 500
+        degree: 2
+        curve_rate: 0
+      vibrato_value:
+        highest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        lowest:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        interval:
+          mode: Const
+          const_value: -1
+          moving_value:
+            type: Proportional
+            start: 0
+            start_value: 0
+            end: 1
+            end_value: 100
+            degree: 2
+            curve_rate: 0
+        continuous: true
+      carrier_table_value:
+        carrier_freq_table: []
+    dipoar_data:
+      value_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
+        degree: 2
+        curve_rate: 0
+- from: 94.75
+  rotate_sine_from: -1
+  rotate_sine_below: -1
+  enable_on_free_run: false
+  enable_off_free_run: false
+  enable_normal: true
+  pulse_Mode:
+    Shift: false
+    Square: false
+    pulse_name: P_Wide_3
+    Base_Wave: Sine
+    pulse_harmonics: []
+    Alt_Mode: Default
+  when_freerun:
+    on:
+      skip: false
+      stuck_at_here: false
+    off:
+      skip: false
+      stuck_at_here: false
+  amplitude_control:
+    default_data:
+      mode: Linear
+      parameter:
+        start_freq: 94.75
+        start_amp: 0.90000000000000002
+        end_freq: 94.989999999999995
+        end_amp: 0.98999999999999999
+        curve_change_rate: 0
+        cut_off_amp: -1
+        max_amp: -1
+        disable_range_limit: false
+        polynomial: 0
+    free_run_data:
+      mascon_on:
+        mode: Linear
+        parameter:
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+      mascon_off:
+        mode: Linear
+        parameter:
+          start_freq: -1
+          start_amp: -1
+          end_freq: -1
+          end_amp: -1
+          curve_change_rate: 0
+          cut_off_amp: -1
+          max_amp: -1
+          disable_range_limit: false
+          polynomial: 0
+  async_data:
+    random_data:
+      random_range:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+      random_interval:
+        value_mode: Const
+        const_value: 0
+        moving_value:
+          type: Proportional
+          start: 0
+          start_value: 0
+          end: 1
+          end_value: 100
+          degree: 2
+          curve_rate: 0
+    carrier_wave_data:
+      carrier_mode: Const
+      const_value: -1
+      moving_value:
+        type: Proportional
+        start: 0
+        start_value: 0
+        end: 1
+        end_value: 100
         degree: 2
         curve_rate: 0
       vibrato_value:
