@@ -36,6 +36,12 @@ NYC MTA R142A/R143/R188 and MBTA Type 8. The file does not have the transition f
 ### AEG GEATRAC DASU 6.1 GTO-VVVF
 Hong Kong MTR ADtranz/CAF EMU on the Tung Chung and Airport Express lines. The file does not have the transition from Async to Sync PWM. Pulse modes may not be correct. I need an induction microphone recording to reference from.  
 [Simulation](https://www.youtube.com/watch?v=t1FFjugW2b8)  
-[Motor sound recording by West World Life](https://www.youtube.com/watch?v=XGHq1-9Ds5o)
+[Motor sound recording by West World Life](https://www.youtube.com/watch?v=XGHq1-9Ds5o)  
+  
+### Alstom ONIX IGBT-VVVF
+NYC MTA R160B and WMATA 2000/3000/6000 Series. R160B used as reference. WMATA uses different carrier frequencies. Refurbished LACMTA P2000 may have this.  
+[R160B induction recording by Ebara Express](https://www.youtube.com/watch?v=KhnxXwO_zAM)  
+[WMATA 3000 Series recording by Geek of the Week](https://www.youtube.com/watch?v=JobFgLwCt2c)  
+[Simulation by Geek of the Week](https://www.youtube.com/watch?v=WPRQpY3FSbY)  
 
 More coming soon!
