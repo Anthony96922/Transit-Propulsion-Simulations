@@ -16,8 +16,10 @@ This is a fictional inverter. No vehicles use this yet.
 [Simulation](https://www.youtube.com/watch?v=4G-hD7c9Ha4)
   
 ### Alstom ONIX IGBT-VVVF
-NYC MTA R142 & R160 and LA Metro P2000. R160 was used as a reference. P2000 may have different frequencies.  
-[R160 induction mic recording by Ebara Express](https://www.youtube.com/watch?v=KhnxXwO_zAM)  
+NYC MTA R160B and WMATA 2000/3000/6000 Series. R160B used as reference. WMATA uses different carrier frequencies. Refurbished LACMTA P2000 may have this.  
+[R160B induction recording by Ebara Express](https://www.youtube.com/watch?v=KhnxXwO_zAM)  
+[WMATA 3000 Series recording by Geek of the Week](https://www.youtube.com/watch?v=JobFgLwCt2c)  
+[Simulation by Geek of the Week](https://www.youtube.com/watch?v=WPRQpY3FSbY)  
 
 ### GE GTO-VVVF
 LA Metro Breda A650's with AC VF propulsion. Also on MBTA 1800 Series.  
@@ -37,11 +39,5 @@ NYC MTA R142A/R143/R188 and MBTA Type 8. The file does not have the transition f
 Hong Kong MTR ADtranz/CAF EMU on the Tung Chung and Airport Express lines. The file does not have the transition from Async to Sync PWM. Pulse modes may not be correct. I need an induction microphone recording to reference from.  
 [Simulation](https://www.youtube.com/watch?v=t1FFjugW2b8)  
 [Motor sound recording by West World Life](https://www.youtube.com/watch?v=XGHq1-9Ds5o)  
-  
-### Alstom ONIX IGBT-VVVF
-NYC MTA R160B and WMATA 2000/3000/6000 Series. R160B used as reference. WMATA uses different carrier frequencies. Refurbished LACMTA P2000 may have this.  
-[R160B induction recording by Ebara Express](https://www.youtube.com/watch?v=KhnxXwO_zAM)  
-[WMATA 3000 Series recording by Geek of the Week](https://www.youtube.com/watch?v=JobFgLwCt2c)  
-[Simulation by Geek of the Week](https://www.youtube.com/watch?v=WPRQpY3FSbY)  
 
 More coming soon!
