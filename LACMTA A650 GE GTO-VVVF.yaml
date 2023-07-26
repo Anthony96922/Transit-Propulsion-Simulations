@@ -18,7 +18,7 @@ min_freq:
   accelerate: 0
   braking: 0
 accelerate_pattern:
-- from: 55
+- from: 45
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -42,9 +42,9 @@ accelerate_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 55
+        start_freq: 45
         start_amp: 1
-        end_freq: 55.100000000000001
+        end_freq: 100
         end_amp: 1
         curve_change_rate: 0
         cut_off_amp: -1
@@ -55,9 +55,9 @@ accelerate_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 55
+          start_freq: 45
           start_amp: 1
-          end_freq: 55.100000000000001
+          end_freq: 100
           end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
@@ -67,9 +67,9 @@ accelerate_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 55
+          start_freq: 45
           start_amp: 1
-          end_freq: 55.100000000000001
+          end_freq: 100
           end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
@@ -168,7 +168,7 @@ accelerate_pattern:
   pulse_Mode:
     Shift: false
     Square: false
-    pulse_name: P_3
+    pulse_name: P_Wide_3
     Base_Wave: Sine
     pulse_harmonics: []
     Alt_Mode: Default
@@ -184,8 +184,8 @@ accelerate_pattern:
       mode: Linear
       parameter:
         start_freq: 40
-        start_amp: 0.81499999999999995
-        end_freq: 54.999000000000002
+        start_amp: 0.80000000000000004
+        end_freq: 45
         end_amp: 0.94999999999999996
         curve_change_rate: 0
         cut_off_amp: -1
@@ -197,8 +197,8 @@ accelerate_pattern:
         mode: Linear
         parameter:
           start_freq: 40
-          start_amp: 0.81499999999999995
-          end_freq: 54.999000000000002
+          start_amp: 0.80000000000000004
+          end_freq: 45
           end_amp: 0.94999999999999996
           curve_change_rate: 0
           cut_off_amp: -1
@@ -209,8 +209,8 @@ accelerate_pattern:
         mode: Linear
         parameter:
           start_freq: 40
-          start_amp: 0.81499999999999995
-          end_freq: 54.999000000000002
+          start_amp: 0.80000000000000004
+          end_freq: 45
           end_amp: 0.94999999999999996
           curve_change_rate: 0
           cut_off_amp: -1
@@ -309,7 +309,7 @@ accelerate_pattern:
   pulse_Mode:
     Shift: false
     Square: false
-    pulse_name: CHMP_13
+    pulse_name: P_18
     Base_Wave: Sine
     pulse_harmonics: []
     Alt_Mode: Default
@@ -325,9 +325,9 @@ accelerate_pattern:
       mode: Linear
       parameter:
         start_freq: 30
-        start_amp: 0.58899999999999997
-        end_freq: 39.999000000000002
-        end_amp: 0.81399999999999995
+        start_amp: 0.5
+        end_freq: 40
+        end_amp: 0.80000000000000004
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -338,9 +338,9 @@ accelerate_pattern:
         mode: Linear
         parameter:
           start_freq: 30
-          start_amp: 0.58899999999999997
-          end_freq: 39.999000000000002
-          end_amp: 0.81399999999999995
+          start_amp: 0.5
+          end_freq: 40
+          end_amp: 0.80000000000000004
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -350,9 +350,9 @@ accelerate_pattern:
         mode: Linear
         parameter:
           start_freq: 30
-          start_amp: 0.58899999999999997
-          end_freq: 39.999000000000002
-          end_amp: 0.81399999999999995
+          start_amp: 0.5
+          end_freq: 40
+          end_amp: 0.80000000000000004
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -466,9 +466,9 @@ accelerate_pattern:
       mode: Linear
       parameter:
         start_freq: 0
-        start_amp: 0
+        start_amp: 0.20000000000000001
         end_freq: 29.998999999999999
-        end_amp: 0.58599999999999997
+        end_amp: 0.5
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -479,9 +479,9 @@ accelerate_pattern:
         mode: Linear
         parameter:
           start_freq: 0
-          start_amp: 0
-          end_freq: 29.998999999999999
-          end_amp: 0.58599999999999997
+          start_amp: 0.20000000000000001
+          end_freq: 30
+          end_amp: 0.5
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -491,9 +491,9 @@ accelerate_pattern:
         mode: Linear
         parameter:
           start_freq: 0
-          start_amp: 0
-          end_freq: 29.998999999999999
-          end_amp: 0.58599999999999997
+          start_amp: 0.20000000000000001
+          end_freq: 30
+          end_amp: 0.5
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -583,7 +583,7 @@ accelerate_pattern:
         degree: 2
         curve_rate: 0
 braking_pattern:
-- from: 55
+- from: 45
   rotate_sine_from: -1
   rotate_sine_below: -1
   enable_on_free_run: true
@@ -607,9 +607,9 @@ braking_pattern:
     default_data:
       mode: Linear
       parameter:
-        start_freq: 55
+        start_freq: 45
         start_amp: 1
-        end_freq: 55.100000000000001
+        end_freq: 100
         end_amp: 1
         curve_change_rate: 0
         cut_off_amp: -1
@@ -620,9 +620,9 @@ braking_pattern:
       mascon_on:
         mode: Linear
         parameter:
-          start_freq: 55
+          start_freq: 45
           start_amp: 1
-          end_freq: 55.100000000000001
+          end_freq: 100
           end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
@@ -632,9 +632,9 @@ braking_pattern:
       mascon_off:
         mode: Linear
         parameter:
-          start_freq: 55
+          start_freq: 45
           start_amp: 1
-          end_freq: 55.100000000000001
+          end_freq: 100
           end_amp: 1
           curve_change_rate: 0
           cut_off_amp: -1
@@ -733,7 +733,7 @@ braking_pattern:
   pulse_Mode:
     Shift: false
     Square: false
-    pulse_name: P_3
+    pulse_name: P_Wide_3
     Base_Wave: Sine
     pulse_harmonics: []
     Alt_Mode: Default
@@ -749,8 +749,8 @@ braking_pattern:
       mode: Linear
       parameter:
         start_freq: 40
-        start_amp: 0.81499999999999995
-        end_freq: 54.999000000000002
+        start_amp: 0.80000000000000004
+        end_freq: 45
         end_amp: 0.94999999999999996
         curve_change_rate: 0
         cut_off_amp: -1
@@ -762,8 +762,8 @@ braking_pattern:
         mode: Linear
         parameter:
           start_freq: 40
-          start_amp: 0.81499999999999995
-          end_freq: 34.999000000000002
+          start_amp: 0.80000000000000004
+          end_freq: 45
           end_amp: 0.94999999999999996
           curve_change_rate: 0
           cut_off_amp: -1
@@ -774,8 +774,8 @@ braking_pattern:
         mode: Linear
         parameter:
           start_freq: 40
-          start_amp: 0.81499999999999995
-          end_freq: 34.999000000000002
+          start_amp: 0.80000000000000004
+          end_freq: 45
           end_amp: 0.94999999999999996
           curve_change_rate: 0
           cut_off_amp: -1
@@ -874,7 +874,7 @@ braking_pattern:
   pulse_Mode:
     Shift: false
     Square: false
-    pulse_name: CHMP_13
+    pulse_name: P_18
     Base_Wave: Sine
     pulse_harmonics: []
     Alt_Mode: Default
@@ -890,9 +890,9 @@ braking_pattern:
       mode: Linear
       parameter:
         start_freq: 30
-        start_amp: 0.58899999999999997
-        end_freq: 39.999000000000002
-        end_amp: 0.81399999999999995
+        start_amp: 0.5
+        end_freq: 40
+        end_amp: 0.80000000000000004
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -903,9 +903,9 @@ braking_pattern:
         mode: Linear
         parameter:
           start_freq: 30
-          start_amp: 0.58899999999999997
-          end_freq: 39.999000000000002
-          end_amp: 0.81399999999999995
+          start_amp: 0.5
+          end_freq: 40
+          end_amp: 0.80000000000000004
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -915,9 +915,9 @@ braking_pattern:
         mode: Linear
         parameter:
           start_freq: 30
-          start_amp: 0.58899999999999997
-          end_freq: 39.999000000000002
-          end_amp: 0.81399999999999995
+          start_amp: 0.5
+          end_freq: 40
+          end_amp: 0.80000000000000004
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1031,9 +1031,9 @@ braking_pattern:
       mode: Linear
       parameter:
         start_freq: 0
-        start_amp: 0
-        end_freq: 29.998999999999999
-        end_amp: 0.58599999999999997
+        start_amp: 0.20000000000000001
+        end_freq: 30
+        end_amp: 0.5
         curve_change_rate: 0
         cut_off_amp: -1
         max_amp: -1
@@ -1044,9 +1044,9 @@ braking_pattern:
         mode: Linear
         parameter:
           start_freq: 0
-          start_amp: 0
-          end_freq: 29.998999999999999
-          end_amp: 0.58599999999999997
+          start_amp: 0.20000000000000001
+          end_freq: 30
+          end_amp: 0.5
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
@@ -1056,9 +1056,9 @@ braking_pattern:
         mode: Linear
         parameter:
           start_freq: 0
-          start_amp: 0
-          end_freq: 29.998999999999999
-          end_amp: 0.58599999999999997
+          start_amp: 0.20000000000000001
+          end_freq: 30
+          end_amp: 0.5
           curve_change_rate: 0
           cut_off_amp: -1
           max_amp: -1
