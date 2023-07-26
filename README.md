@@ -22,7 +22,7 @@ NYC MTA R160B and WMATA 2000/3000/6000 Series. R160B used as reference. WMATA us
 [Simulation by Geek of the Week](https://www.youtube.com/watch?v=WPRQpY3FSbY)  
 
 ### GE GTO-VVVF
-LA Metro Breda A650's with AC VF propulsion. Also on MBTA 1800 Series.  
+LA Metro Breda A650's with AC VF propulsion. Different variation on MBTA 1800 Series.  
 [Induction mic recording](https://www.youtube.com/watch?v=RxTIYGlXDM4)  
 [MBTA 1800 Series induction mic recording by Ebara Express](https://www.youtube.com/watch?v=jQIdCOf7oX4)
   
